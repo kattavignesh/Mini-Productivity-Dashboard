@@ -34,7 +34,7 @@ The application enforces data privacy and security through the following logic:
 1.  **Clone the Repository**:
     ```bash
     git clone https://github.com/kattavignesh/Mini-Productivity-Dashboard.git
-    cd Mini-ProductivityDashboard
+    cd Mini-Productivity-Dashboard
     ```
 
 2.  **Install Dependencies**:
