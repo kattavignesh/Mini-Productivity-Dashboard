@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import LoginPage from './pages/LoginPage';
@@ -7,7 +7,7 @@ import UnauthorizedPage from './pages/UnauthorizedPage';
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <AuthProvider>
         <Routes>
           {/* Public */}
@@ -28,6 +28,6 @@ export default function App() {
           <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
       </AuthProvider>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
